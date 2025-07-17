@@ -116,12 +116,21 @@ An optional paramater of `IBMCLOUD_PLUGINS=one,two,three` can be added to the fo
                 "-e",
                 "IBMCLOUD_API_KEY",
                 "-e",
+                "IBMCLOUD_REGION",
+                "-e",
+                "IBMCLOUD_RESOURCE_GROUP",
+                "-e",
                 "IBMCLOUD_MCP_TOOLS",
+                "-e",
+                "IBMCLOUD_MCP_TRANSPORT",
                 "ibmcloud-mcpserver/ibmcloud-mcpserver"
             ],
             "env": {
                 "IBMCLOUD_API_KEY": "<Your API key",
-                "IBMCLOUD_MCP_TOOLS": "comma,separated,list,of,tools,to,enable"
+                "IBMCLOUD_REGION": "us-south",
+                "IBMCLOUD_RESOURCE_GROUP": "default",
+                "IBMCLOUD_MCP_TOOLS": "<comma,separated,list,of,tools,to,enable>",
+                "IBMCLOUD_MCP_TRANSPORT": "<stdio || sse>"
             }
         }
     }
@@ -134,25 +143,25 @@ You can run the built container image locally using the `make` targets for Podma
 
 Ensure you have a `.env` file in the project root. Copy `.env.example` to `.env` and set the values.
 
-* **Running with Podman (HTTP on port 4444):**
+* **Running with Podman (HTTP on port 4141):**
 
     ```bash
     make podman-run
     ```
 
-* **Running with Podman (HTTPS on port 4444):**
+* **Running with Podman (HTTPS on port 4141):**
 
     ```bash
     make podman-run-ssl
     ```
 
-* **Running with Docker (HTTP on port 4444):**
+* **Running with Docker (HTTP on port 4141):**
 
     ```bash
     make docker-run
     ```
 
-* **Running with Docker (HTTPS on port 4444):**
+* **Running with Docker (HTTPS on port 4141):**
 
     ```bash
     make docker-run-ssl
@@ -199,8 +208,6 @@ The Makefile includes targets for scanning your `Containerfile` and built images
     ```bash
     make trivy
     ```
-
-    *Requires Podman socket enabled (`systemctl --user enable --now podman.socket`)*
 
 * **Lint container image using Dockle:**
 
