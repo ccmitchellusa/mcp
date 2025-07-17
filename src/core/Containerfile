@@ -1,6 +1,6 @@
 FROM registry.access.redhat.com/ubi9-minimal:9.6-1747218906
 LABEL maintainer="Ryan Edgell" \
-      name="mcp/ibmcloud" \
+      name="ibmcloud/climcpserver" \
       description="IBM Cloud MCP Server: Model Context Protocol for IBM Cloud"
 
 ARG IBMCLOUD_VERSION=2.35.0

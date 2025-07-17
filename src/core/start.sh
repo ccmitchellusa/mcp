@@ -1,6 +1,6 @@
 #!/bin/bash
 /app/ibmcloud config --check-version=false > /dev/null
-/app/ibmcloud login --apikey $IBMCLOUD_API_KEY -r us-south -g default > /dev/null
+/app/ibmcloud login --apikey $IBMCLOUD_API_KEY -r $IBMCLOUD_REGION -g $IBMCLOUD_RESOURCE_GROUP > /dev/null
 
 case "$IBMCLOUD_MCP_TRANSPORT" in
     sse)

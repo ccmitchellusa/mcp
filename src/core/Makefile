@@ -13,7 +13,8 @@
 #
 # ──────────────────────────────────────────────────────────────────────────
 # Project variables
-PROJECT_NAME      = ibmcloud-mcpserver
+PROJECT           = ibmcloud
+PROJECT_NAME      = climcpserver
 
 # -----------------------------------------------------------------------------
 # Container resource configuration
@@ -129,9 +130,9 @@ containerfile-update:
 
 .PHONY: podman podman-run podman-run-shell podman-run-ssl podman-stop podman-test
 
-IMG               ?= $(PROJECT_NAME)/$(PROJECT_NAME)
-IMG_DEV            = $(IMG)-dev
-IMG_PROD           = $(IMG)
+IMG               ?= $(PROJECT)/$(PROJECT_NAME)
+IMG_DEV            = $(IMG)-dev:latest
+IMG_PROD           = $(IMG):latest
 
 podman:
 	@echo "🦭  Building container using ubi9-minimal…"
