@@ -209,8 +209,6 @@ The Makefile includes targets for scanning your `Containerfile` and built images
     make trivy
     ```
 
-    *Requires Podman socket enabled (`systemctl --user enable --now podman.socket`)*
-
 * **Lint container image using Dockle:**
 
     ```bash
