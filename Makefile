@@ -28,6 +28,16 @@ CONTAINER_CPUS   = 1
 help:
 	@grep "^# help\:" Makefile | grep -v grep | sed 's/\# help\: //' | sed 's/\# help\://'
 
+# help: list-configs         - List all available MCP configuration profiles
+.PHONY: list-configs
+list-configs:
+	@echo "Available MCP configuration profiles:"
+	@echo "======================================"
+	@ls src/*/configs/*.json 2>/dev/null | xargs -n1 basename | sed 's/mcp\.//' | sed 's/\.json//' | sort | uniq
+	@echo ""
+	@echo "Usage: Set CONFIG_PROFILE in .env file:"
+	@echo "   CONFIG_PROFILE=<profile>"
+
 # =============================================================================
 # 🛡️  SECURITY & PACKAGE SCANNING
 # =============================================================================

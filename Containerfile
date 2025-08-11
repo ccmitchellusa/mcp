@@ -7,10 +7,13 @@ ARG IBMCLOUD_VERSION=2.35.0
 ARG IBMCLOUD_ARCH=amd64
 ARG IBMCLOUD_PLUGINS
 
-# Install required system packages
+# Install required system packages including jq for JSON parsing
 RUN microdnf update -y && \
-    microdnf install -y tar-1.34 gzip-1.12 procps-ng-3.3.17 && \
+    microdnf install -y tar-1.34 gzip-1.12 procps-ng-3.3.17 jq-1.6 && \
     microdnf clean all
+
+# Copy all MCP configuration files
+COPY src/*/configs/*.json /app/configs/
 
 COPY ./start.sh /app/start.sh
 RUN chmod +x /app/start.sh
