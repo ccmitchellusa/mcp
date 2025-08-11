@@ -35,8 +35,8 @@ list-configs:
 	@echo "======================================"
 	@ls src/*/configs/*.json 2>/dev/null | xargs -n1 basename | sed 's/mcp\.//' | sed 's/\.json//' | sort | uniq
 	@echo ""
-	@echo "Usage: make podman CONFIG=<profile>"
-	@echo "   or: make docker CONFIG=<profile>"
+	@echo "Usage: Set CONFIG_PROFILE in .env file:"
+	@echo "   CONFIG_PROFILE=<profile>"
 
 # =============================================================================
 # 🛡️  SECURITY & PACKAGE SCANNING
