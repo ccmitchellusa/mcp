@@ -6,7 +6,7 @@
         "--mcp-transport",
         "stdio",
         "--mcp-tools",
-        "assist,target,resource_groups,account"
+        "assist,target,resource_groups,account,enterprise"
       ]
     }
   }

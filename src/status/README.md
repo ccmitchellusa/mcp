@@ -1,4 +1,4 @@
-# IBMCloud MCP Server - Cloud Status
+# Standalone MCP Server - Cloud Status Feed
 
 This project provides a Model Context Protocol (MCP) server with tools for accessing IBM Cloud status via it's official RSS feed.
 

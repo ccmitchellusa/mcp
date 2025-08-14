@@ -6,7 +6,7 @@
         "--mcp-transport",
         "stdio",
         "--mcp-tools",
-        "assist,target,resource_groups,catalog_locations,cloud-logs"
+        "target,catalog_utility,catalog_create,catalog_delete,catalog_entry,catalog_filter,catalog_locations,catalog_offering,catalog_get,catalog_install,catalog_list"
       ]
     }
   }

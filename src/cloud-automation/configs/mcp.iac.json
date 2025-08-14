@@ -6,7 +6,7 @@
         "--mcp-transport",
         "stdio",
         "--mcp-tools",
-        "resource_groups,target,catalog_da,project,schematics"
+        "resource_groups,target,catalog_da,catalog_locations,project,schematics"
       ]
     }
   }

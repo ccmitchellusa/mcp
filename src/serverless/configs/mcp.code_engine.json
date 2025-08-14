@@ -5,9 +5,8 @@
       "args": [
         "--mcp-transport",
         "stdio",
-	"--mcp-allow-write",
         "--mcp-tools",
-        "assist,resource_groups,pi_d,pi_workspace,pi_image,pi_instance"
+        "target,resource_groups,code-engine"
       ]
     }
   }

@@ -1,0 +1,1 @@
+{% include "../../../src/event-notifications/README.md" %}
