@@ -177,6 +177,7 @@ For example, the query:`service_tags:(”project::config_id:1e3bf974-0f34-4a96-9
 #### IAM
 
 To determine what a `USER_ID` has access to:
+
     1. Find the access policies that the user is assigned to.
     2. Find the access groups that are available. The access group details include information like the role(s) and resources that users assigned to the access group can use.
     3. For each access group check the access group’s list of users to see if `USER_ID` is listed.
@@ -186,7 +187,8 @@ To add service id’s to service id groups, the service id group must be created
 
 Before trying to delete a service id group, find service id’s that reference the group using it’s group id.
 If there are service id’s that reference a service id group, the service id group cannot be deleted.  
-So if there is a service id that references the service id group,, 
+So if there is a service id that references the service id group:
+
     1. Display a list of the service id’s that are in the service id group and ask the user tor confirmation to delete all the service id’s in the group.  
     2. When all the service ids have been deleted, delete the service id group.
 
