@@ -79,7 +79,7 @@ Verify that the `MCP OPTIONS` are available as above and proceed with configurin
     }
     ```
 
-## 🛡️ Safe mode -- Secure by default
+## 🛡️ Safe mode -- Read-only by default
 
 The default configuration of IBM Cloud MCP Server will run in **Safe Mode** which will not allow tools which make changes to IBM Cloud resources to be invoked via MCP.  To override this default behavior, use the `--mcp-allow-write` argument in the mcp configuration, eg.:
 
