@@ -44,11 +44,11 @@ Here are some prompts that you can use to get IBM Cloud status entries:
 
 - 🗣️ Don't show the function calls in the output
 - 🗣️ Show recent ibmcloud status updates
-![recent status updates](images/status1.png)
+![recent status updates](https://github.com/IBM-Cloud/ibmcloud-mcp-server/blob/main/src/status/images/status1.png)
 - 🗣️ tell me more about the incident in dal
-![dal incident details](images/status2.png)
+![dal incident details](https://github.com/IBM-Cloud/ibmcloud-mcp-server/blob/main/src/status/images/status2.png)
 - 🗣️ Show status updates from the prior month
-![prior month status listing](images/status3.png)
+![prior month status listing](https://github.com/IBM-Cloud/ibmcloud-mcp-server/blob/main/src/status/images/status3.png)
 - 🗣️ Show details of entry 8
-![details of entry #8](images/status4.png)
+![details of entry #8](https://github.com/IBM-Cloud/ibmcloud-mcp-server/blob/main/src/status/images/status4.png)
 
