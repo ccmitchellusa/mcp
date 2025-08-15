@@ -22,7 +22,7 @@ nav:
       - Cloud Automation: servers/cloud-automation.md
       - Cloud Internet Services: servers/cloud-internet-services.md
       - Cloud Logs: servers/cloudlogs.md
-      - Contaainer Registry: servers/container-registry.md
+      - Container Registry: servers/container-registry.md
       - Event Notifications: servers/event-notifications.md
       - Event Streams: servers/event-streams.md
       - Cloud Kubernetes & OpenShift: servers/kubernetes.md
