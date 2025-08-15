@@ -1,4 +1,4 @@
-# IBMCloud MCP Server - Cloud Logs
+# Cloud Logs
 
 This project provides a Model Context Protocol (MCP) server with tools for the IBM Cloud Logs service
 
