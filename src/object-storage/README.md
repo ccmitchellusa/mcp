@@ -2,6 +2,10 @@
 
 This project provides a Model Context Protocol (MCP) server with tools for the Cloud Object Storage service
 
+## Install
+
+See [Getting Started](https://ibm-cloud.github.io/mcp/overview/) for installation instructions.
+
 ## ⚙️ Configurations
 
 The following example MCP configurations can be found in the `configs` folder to help get started with object storage use cases:

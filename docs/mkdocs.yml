@@ -15,7 +15,7 @@ repo_url: "https://github.com/IBM-Cloud/mcp"
 nav:
   - Home: index.md
   - Documentation:
-    - Overview: overview.md
+    - Getting Started: overview.md
     - MCP Servers (CLI-based):
       - ✨ Core ✨: servers/core.md
       - Context Based Routing: servers/cbr.md
