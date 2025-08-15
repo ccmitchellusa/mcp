@@ -33,11 +33,11 @@ use to get started using the tools:
 🗣️Before creating instances, you MUST:
 
 1. Target an existing PowerVS Workspace.
-1.1 If a workspace is not currently targeted, list the available workspaces. 
-1.1.2 If there are no workspaces, assist the user with creating o workspace to use. You will need the resource group, plan and workspace name.
-1.1.3 If there is one workspace, target it for future tool calls.
-1.1.4 If there are more than one workspace, ask the user to select one to target.
-1.1.5 If a workspace is currently targeted, list workspaces to obtain the CRN of a workspace to target
+    1. If a workspace is not currently targeted, list the available workspaces.
+        1. If there are no workspaces, assist the user with creating o workspace to use. You will need the resource group, plan and workspace name.
+        2. If there is one workspace, target it for future tool calls.
+        3. If there are more than one workspace, ask the user to select one to target.
+    2. If a workspace is currently targeted, list workspaces to obtain the CRN of a workspace to target
 2. To find power system types (eg. s922, e980, …) that are available in a given datacenter location, list the datacenter locations and include details for each location.
 
 ### User Prompts
