@@ -151,6 +151,7 @@ Configuration profiles are selected at runtime using environment variables (CONF
 ### Running the Container with an MCP Client
 
 The container supports two configuration methods:
+
 1. **CONFIG_PROFILE** - Use a pre-defined configuration profile
 2. **IBMCLOUD_MCP_TOOLS** - Specify tools directly (fallback if CONFIG_PROFILE not set)
 
