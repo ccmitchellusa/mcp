@@ -30,38 +30,35 @@ use to get started using the tools:
 
 > _See the [Core](https://github.com/IBM-Cloud/ibmcloud-mcp-server/blob/main/src/core/README.md) for common system prompts to use before these service-specific prompts._
 
-When a customer has a general question about IBM Cloud or building solutions for IBM Cloud, and the question cannot be addressed by a native tool, use the ibmcloud_assist tool to find answers if the tool is available to call.Before working with Cloud Object Storage (COS), you need to find a Cloud Object Storage service instance to work with.  Cloud object storage service instances contain storage buckets that are used to store objects.  The service instance is not the same as a bucket (which is a resource instance).  Bucket resources will have CRN’s containing a resource segment “bucket”.
-List the COS config to see if a service endpoint has already been set.
-If not, find existing cloud object storage service instances using the `resource_search` tool with query “cloud-object-storage”.
-If there is more than one cloud object storage service instance, ask the user to clarify which instance should be used, otherwise if one is available, select to work with.
-Obtain the COS service id from the CRN of the selected COS service instance.  The service id segment of a CRN is the segment after the region segment (eg. “global” and before the resource instance ID.
-Once the COS service instance ID is known, ask the user whether to list buckets or show other service instance instance details.
-To find the endpoint URL for an IBM Cloud Cloud Object Storage bucket, use the native tool to retrieve additional details. This tool will provide details about your instance, including its CRN (Cloud Resource Name) and endpoint URL.
+🗣️Before creating instances, you MUST:
 
-Use the following styles:
-
-- Use 🪣 before buckets
-- Use ⚙️ for services
-- Use ⛭ for service instances
-- Use ㊮ for resource instances
-- Use ⛬ before resource groups
-
+1. Target an existing PowerVS Workspace.
+1.1 If a workspace is not currently targeted, list the available workspaces. 
+1.1.2 If there are no workspaces, assist the user with creating o workspace to use. You will need the resource group, plan and workspace name.
+1.1.3 If there is one workspace, target it for future tool calls.
+1.1.4 If there are more than one workspace, ask the user to select one to target.
+1.1.5 If a workspace is currently targeted, list workspaces to obtain the CRN of a workspace to target
+2. To find power system types (eg. s922, e980, …) that are available in a given datacenter location, list the datacenter locations and include details for each location.
 
 ### User Prompts
 
-- 🗣️ List alerts
-- 🗣️ List logs, use output type [logs-raw, logs-prettify, json] 
-  - 🚨 KNOWN ISSUE: Setting output format is broken
-- 🗣️ List data access rules
-- 🗣️ Show cloud logs configuration
-- 🗣️ List enrichments
-- 🗣️ List event streams
-- 🗣️ List outbound integrations
-- 🗣️ Show policies
-- 🗣️ List rule groups
-- 🗣️ List views
-- 🗣️ Create a view named NAME
-- 🗣️ Show details of rule group RULEGROUP_ID
+- 🗣️ List datacenter locations
+- 🗣️ List datacenter locations, including details for each location.
+- 🗣️ List datacenter locations, including details for each location in a table format.
+- 🗣️ Create a workspace in {{DATACENTER}}, named {{WORKSPACE_NAME}} in the {{RESOURCE_GROUP}} resource group. I want this in public cloud (eg. off-prem).
+- 🗣️ Show workspace details
+- 🗣️ Create a {{ public | private }} subnet with default CIDR🗣️List all available regional images [in a table format]
+- 🗣️ List images [in a table format]
+  - Note: this shows images for the currently targeted workspace
+- 🗣️ Create an instance named {{INSTANCE_NAME}} in the {{WORKSPACE_NAME}} workspace, with the latest {{IMAGE_NAME}} operating system, and minimal cpu/memory profile attached to {{SUBNET_NAME}}
+- 🗣️ List the instances in this workspace [in table format]
+- 🗣️ Show details of instance {{INSTANCE_NAME}}
+- 🗣️ Create a storage volume with minimum size.
+- 🗣️ List volumes [in table format]
+- 🗣️ Delete instances {{INSTANCE_NAME}}
+- 🗣️ Delete volume {{VOLUME_NAME}}
+- 🗣️ Delete subnet {{SUBNET_NAME}}
+- 🗣️ Delete workspace {SUBNET_NAME}}
 
 ### Common
 
