@@ -33,7 +33,7 @@ use to get started using the tools:
 
 ### System Prompts
 
-> **✂️ Cut/Paste this section as a system prompt before other Cloud Automation User prompts**
+> **✂️ Cut/Paste this section as a system prompt before other User prompts**
 
 > _See the [Core](https://github.com/IBM-Cloud/ibmcloud-mcp-server/blob/main/src/core/README.md) for common system prompts to use before these service-specific prompts._
 
