@@ -57,7 +57,7 @@ Use the following styles:
 - 🗣️ List all the deployable architectures in all catalogs
 - 🗣️ Show me detailed deployment information for the XYZ deployable architectures in the Community Registry catalog
 - 🗣️ Select the `CODE_ENGINE_PROJECT_NAME` project to work with
-- 🗣️Add a configuration in the PROJECT_ID project for the VARATION variation of the deployable architecture DA_ID.
+- 🗣️Add a configuration in the PROJECT_ID project for the VARIATION variation of the deployable architecture DA_ID.
 - 🗣️Show details of the configuration `CONFIG_ID`
 
 - 🚧 TBD - WORK IN PROGRESS 🚧 
