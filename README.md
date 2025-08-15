@@ -112,7 +112,8 @@ The container includes pre-configured profiles for different IBM Cloud services.
 make list-configs
 ```
 
-Common profiles include:
+Example profiles include:
+
 - `vpc-instance` - VPC instance management
 - `ks` - Kubernetes cluster management
 - `code_engine_apps` - Code Engine application management
