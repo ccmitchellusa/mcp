@@ -6,7 +6,7 @@
         "--mcp-transport",
         "stdio",
         "--mcp-tools",
-        "resource_groups,target,kr_regions,cr"
+        "resource_groups,target,cr"
       ]
     }
   }
