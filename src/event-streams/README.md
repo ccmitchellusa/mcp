@@ -21,7 +21,7 @@ Each of the above configurations also includes the following essential tools:
 
 ## 🗣️ Prompts
 
-The MCP Prompt feature is not currently implemented in the IBM Cloud MCP Servers, however, here are some prompts that you can use to get started using the tools:
+The MCP Prompt feature is not currently implemented in the IBM Cloud MCP Servers; however, here are some prompts that you can use to get started using the tools:
 
 ### System Prompts
 
@@ -63,7 +63,7 @@ When displaying information about event streams:
 - 🗣️ List schema versions for ARTIFACT_NAME
 - 🗣️ Delete schema version VERSION of ARTIFACT_MAME
 
-### Common
+### Common Prompts
 
 - 🗣️ Assist me with `IBM_CLOUD_TOPIC`
 - 🗣️ What resource groups are in my account?

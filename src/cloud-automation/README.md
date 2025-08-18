@@ -21,7 +21,7 @@ Each of the above configurations also includes the following essential tools:
 
 ## 🗣️ Prompts
 
-The MCP Prompt feature is not currently implemented in the IBM Cloud MCP Servers, however, here are some prompts that you can 
+The MCP Prompt feature is not currently implemented in the IBM Cloud MCP Servers; however, here are some prompts that you can 
 use to get started using the tools:
 
 ### System Prompts
@@ -59,8 +59,6 @@ Use the following styles:
 - 🗣️ Select the `CODE_ENGINE_PROJECT_NAME` project to work with
 - 🗣️Add a configuration in the PROJECT_ID project for the VARIATION variation of the deployable architecture DA_ID.
 - 🗣️Show details of the configuration `CONFIG_ID`
-
-- 🚧 TBD - WORK IN PROGRESS 🚧 
 - 🗣️ What input values still need to be specified before I can deploy configuration `CONFIG_ID`?
 - 🗣️ Validate the `CONFIG_ID` configuration.
 - 🗣️ View the validation logs for `CONFIG_ID`
@@ -68,7 +66,7 @@ Use the following styles:
 - 🗣️ Find errors in the deployment logs for project configurations.
 - 🗣️ What can I try to resolve these deployment errors?
 
-### Common
+### Common Prompts
 
 - 🗣️ Assist me with `IBM_CLOUD_TOPIC`
 - 🗣️ What resource groups are in my account?

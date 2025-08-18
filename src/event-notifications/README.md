@@ -21,7 +21,7 @@ Each of the above configurations also includes the following essential tools:
 
 ## 🗣️ Prompts
 
-The MCP Prompt feature is not currently implemented in the IBM Cloud MCP Servers, however, here are some prompts that you can use to get started using the tools:
+The MCP Prompt feature is not currently implemented in the IBM Cloud MCP Servers; however, here are some prompts that you can use to get started using the tools:
 
 ### System Prompts
 
@@ -42,7 +42,7 @@ Use the event notification instance as the current service id in subsequent tool
 - 🗣️ List templates
 - 🗣️ List sources
 
-### Common
+### Common Prompts
 
 - 🗣️ Assist me with `IBM_CLOUD_TOPIC`
 - 🗣️ What resource groups are in my account?

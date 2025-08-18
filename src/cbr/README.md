@@ -21,7 +21,7 @@ Each of the above configurations also includes the following essential tools:
 
 ## 🗣️ Prompts
 
-The MCP Prompt feature is not currently implemented in the IBM Cloud MCP Servers, however, here are some prompts that you can use to get started using the tools:
+The MCP Prompt feature is not currently implemented in the IBM Cloud MCP Servers; however, here are some prompts that you can use to get started using the tools:
 
 ### System Prompts
 
@@ -39,9 +39,8 @@ The MCP Prompt feature is not currently implemented in the IBM Cloud MCP Servers
 - 🗣️ List network zones
 - 🗣️ List CBR services in table format
 - 🗣️ Show details of the SERVICE_NAME service
-- 🚧 TBD - WORK IN PROGRESS 🚧 
 
-### Common
+### Common Prompts
 
 - 🗣️ Assist me with `IBM_CLOUD_TOPIC`
 - 🗣️ What resource groups are in my account?

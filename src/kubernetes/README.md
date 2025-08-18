@@ -21,7 +21,7 @@ Each of the above configurations also includes the following essential tools:
 
 ## 🗣️ Prompts
 
-The MCP Prompt feature is not currently implemented in the IBM Cloud MCP Servers, however, here are some prompts that you can 
+The MCP Prompt feature is not currently implemented in the IBM Cloud MCP Servers; however, here are some prompts that you can 
 use to get started using the tools:
 
 ### System Prompts
@@ -58,9 +58,7 @@ When displaying information about Kubernetes, use the following styles:
 - 🗣️ Show user messages
 - 🗣️ List VPC’s for the vpc-gen2 provider. For each VPC, include the resource group and regions/zones the VPC is contained in. The resource group and region information can be found using the JSON format option on the ibmcloud_ks_vpc_ls native tool call.  Use a table format sorted first by the country that is associated with the region/zones and second by the VPC name. 
 
-- 🚧 Work in progress 🚧
-
-### Common
+### Common Prompts
 
 > NOTE: The above commands are from the [Core](https://github.com/IBM-Cloud/ibmcloud-mcp-server/blob/main/src/core/README.md) set of tools and included in the code engine configuration examples above.  There are many other core commands for working with access, accounts, users, services, resource searching, etc. that can be used simply by adding the tool names to the config.
 

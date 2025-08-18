@@ -25,7 +25,7 @@ The following example MCP configurations can be found in the `configs` folder to
 
 ## 🗣️ Prompts
 
-The MCP Prompt feature is not currently implemented in the IBM Cloud MCP Servers, however, here are some prompts that you can
+The MCP Prompt feature is not currently implemented in the IBM Cloud MCP Servers; however, here are some prompts that you can
 use to get started using the core tools:
 
 ### System Prompts
@@ -194,7 +194,7 @@ So if there is a service id that references the service id group:
 
 ### User Prompts
 
-#### Common
+#### Common Prompts
 
 - 🗣️ Assist me with `IBM_CLOUD_TOPIC`
 - 🗣️ What are the different parts of a CRN?

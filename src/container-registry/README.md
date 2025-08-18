@@ -21,7 +21,7 @@ Each of the above configurations also includes the following essential tools:
 
 ## 🗣️ Prompts
 
-The MCP Prompt feature is not currently implemented in the IBM Cloud MCP Servers, however, here are some prompts that you can 
+The MCP Prompt feature is not currently implemented in the IBM Cloud MCP Servers; however, here are some prompts that you can 
 use to get started using the tools:
 
 ### System Prompts
@@ -65,7 +65,7 @@ When displaying information about container registry, use the following styles:
 - 🗣️ Show vulnerability report for IMAGE_NAME.
 - 🗣️ Show vulnerability report for IMAGE_NAME.  Include suggestions for remediation actions.
 
-### Common
+### Common Prompts
 
 - 🗣️ Assist me with `IBM_CLOUD_TOPIC`
 - 🗣️ What resource groups are in my account?
