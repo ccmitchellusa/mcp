@@ -10,8 +10,17 @@ The core MCP server implementation for IBM Cloud is built directly into the IBM 
 
 There are two runtime scenarios supported:
 
-1. **Local install - Core MCP Server** - Configure any MCP Host Application (e.g. Claude, VSCode, Cursor, Cline, mcp-cli) to use IBM Cloud CLI as an MCP server.  This scenario involves installing the IBM Cloud CLI locally and then updating the host application's JSON MCP configuration settings to use the IBM Cloud CLI in MCP mode and specifying `stdio` with the `--mcp-transport` parameter.
-2. **Containerized MCP Servers** - Use the Container provided in the root directory to build fit-for-purpose containerized versions of the IBM Cloud MCP Server which can be deployed on any container runtime (e.g. podman, docker, IBM Cloud Code Engine, Redhat OpenShift, Kubernetes) to run as an MCP Remote server. This scenario involves building the container file with an optional configuration profile, providing environment variables to configure the appropriate tools to be exposed via MCP, and securely configuring the credentials to be used for the container.
+1. **Local Single-user install - Core MCP Server** - Configure any MCP Host Application (e.g. Claude, VSCode, Cursor, Cline, mcp-cli) to use IBM Cloud CLI as an MCP server.  This scenario involves installing the IBM Cloud CLI locally and then updating the host application's JSON MCP configuration settings to use the IBM Cloud CLI in MCP mode and specifying `stdio` with the `--mcp-transport` parameter.
+2. **Containerized Single-user MCP Servers** - Use the Container provided in the root directory to build fit-for-purpose containerized versions of the IBM Cloud MCP Server which can be deployed on any container runtime (e.g. podman, docker, IBM Cloud Code Engine, Redhat OpenShift, Kubernetes) to run as an MCP Remote server. This scenario involves building the container file with an optional configuration profile, providing environment variables to configure the appropriate tools to be exposed via MCP, and securely configuring the credentials to be used for the container.
+
+### Current Limitations
+
+The IBM Cloud MCP Server has the following limitations:
+
+- The MCP server is stateful, meaning that it (and its IBM Cloud CLI plugins) require per-user configuration settings and prefernces to be stored on the local filesystem in the IBMCLOUD_HOME location.
+- The MCP server is not designed to be used for multi-account or multi-user scenarios.
+- The MCP server does not support OAuth authentication.
+- The containerized version of the IBM Cloud MCP Server also does not support multi-user scenarios, and requires a single user or service identity to be configured per deployment.
 
 ## 💻 Local Install - Core MCP Server and Plugin Modules
 

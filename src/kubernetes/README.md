@@ -6,6 +6,12 @@ This project provides a Model Context Protocol (MCP) server with tools for kuber
 
 See [Getting Started](https://ibm-cloud.github.io/mcp/overview/) for installation instructions.
 
+This configuration uses tools which requires the CLI plugin `container-service` to be installed.  Run the following commands to install the plugins if they are not already installed:
+
+```bash
+ibmcloud plugin install container-service
+```
+
 ## ⚙️ Configurations
 
 The following example MCP configurations can be found in the `configs` folder to help get started with Kubernetes use cases:
